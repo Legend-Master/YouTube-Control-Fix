@@ -10,8 +10,8 @@
 // @updateURL      https://github.com/Legend-Master/YouTube-Control-Fix/raw/main/youtube_control_fix.user.js
 // @downloadURL    https://github.com/Legend-Master/YouTube-Control-Fix/raw/main/youtube_control_fix.user.js
 // @supportURL     https://github.com/Legend-Master/YouTube-Control-Fix/issues
-// @match          http://www.youtube.com/*
 // @match          https://www.youtube.com/*
+// @exclude        https://www.youtube.com/live_chat?*
 // @grant          none
 // ==/UserScript==
 
