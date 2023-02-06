@@ -11,6 +11,7 @@
 // @downloadURL    https://github.com/Legend-Master/YouTube-Control-Fix/raw/main/youtube_control_fix.user.js
 // @supportURL     https://github.com/Legend-Master/YouTube-Control-Fix/issues
 // @match          https://www.youtube.com/*
+// @match          https://www.youtube-nocookie.com/*
 // @exclude        https://www.youtube.com/live_chat?*
 // @grant          none
 // ==/UserScript==
