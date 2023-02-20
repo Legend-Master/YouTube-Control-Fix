@@ -37,8 +37,11 @@
             hookedElements.add(element)
             element.addEventListener('keydown', (event) => {
                 event.stopPropagation()
-                event.preventDefault()
-                player.dispatchEvent(new event.constructor(event.type, event))
+                const fakeEvent = new event.constructor(event.type, event)
+                player.dispatchEvent(fakeEvent)
+                if (fakeEvent.defaultPrevented) {
+                    event.preventDefault()
+                }
             }, true)
         }
     }
