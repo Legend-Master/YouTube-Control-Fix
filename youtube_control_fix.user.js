@@ -29,6 +29,7 @@
         const elements = [
             ...player.getElementsByClassName('ytp-progress-bar-container'),
             ...player.getElementsByClassName('ytp-volume-panel'),
+            ...player.getElementsByClassName('ytp-chrome-bottom'),
         ]
         for (const element of elements) {
             if (hookedElements.has(element)) {
