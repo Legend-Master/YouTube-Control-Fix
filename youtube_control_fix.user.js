@@ -58,4 +58,21 @@
     hookPlayers()
     window.addEventListener('yt-player-updated', hookPlayers)
 
+    // Fix alt tab back to the page makes space pause/play no longer works
+    let lastFocusTime
+    window.addEventListener('focus', (ev) => {
+        if (ev.target === window) {
+            lastFocusTime = performance.now()
+        }
+    }, true)
+    window.addEventListener('keyup', (ev) => {
+        if (!lastFocusTime) {
+            return
+        }
+        if (ev.key === 'Tab') {
+            if (lastFocusTime - performance.now() < 50) {
+                ev.stopImmediatePropagation()
+            }
+        }
+    }, true)
 })()
