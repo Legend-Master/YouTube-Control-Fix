@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name           YouTube Control Fix
 // @namespace      https://github.com/Legend-Master
-// @version        0.4
+// @version        0.5
 // @author         Tony
 // @description    Make youtube shortcut behavior more consistent
 // @description:zh 使 Youtube 快捷键行为更固定
